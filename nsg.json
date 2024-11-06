@@ -20,7 +20,7 @@
                             "description": "description",
                             "protocol": "Tcp",
                             "sourcePortRange": "*",
-                            "destinationPortRange": "22",
+                            "destinationPortRange": "80",
                             "sourceAddressPrefix": "*",
                             "destinationAddressPrefix": "*",
                             "access": "Allow",

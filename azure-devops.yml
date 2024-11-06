@@ -1,0 +1,11 @@
+pool:
+  name: Azure Pipelines
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  displayName: 'ARM Template deployment: Resource Group scope'
+  inputs:
+    azureResourceManagerConnection: 'Azure Pass - Sponsorship(c65b11f7-8c11-4549-b1a7-28357db4e506)'
+    subscriptionId: 'c65b11f7-8c11-4549-b1a7-28357db4e506'
+    resourceGroupName: yenne
+    location: 'East US'
+    csmFile: nsg.json
